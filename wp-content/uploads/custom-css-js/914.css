@@ -1,0 +1,34 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+/* For mobiles (width under 767px) */
+@media only screen and (max-width: 767px) {
+	.citadel-featured-gallery .e-con-inner {
+		display: flex;
+		align-items: center;
+	}
+/* 	.citadel-featured-gallery .e-con.e-flex {
+    --width: 25%;
+
+	} */
+	.elementor-903 .elementor-element.elementor-element-eaf2b71 {
+    --display: flex;
+    --flex-direction: column;
+    --container-widget-width: 25%;
+    --container-widget-height: initial;
+    --container-widget-flex-grow: 0;
+    --container-widget-align-self: initial;
+    --background-transition: 0.3s;
+}
+}</style>
+<!-- end Simple Custom CSS and JS -->

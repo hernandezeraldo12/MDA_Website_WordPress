@@ -1,0 +1,153 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Contact Us and WP Forms custom styling */
+div.wpforms-container-full input[type=date]::-webkit-input-placeholder, div.wpforms-container-full input[type=datetime]::-webkit-input-placeholder, div.wpforms-container-full input[type=datetime-local]::-webkit-input-placeholder, div.wpforms-container-full input[type=email]::-webkit-input-placeholder, div.wpforms-container-full input[type=month]::-webkit-input-placeholder, div.wpforms-container-full input[type=number]::-webkit-input-placeholder, div.wpforms-container-full input[type=password]::-webkit-input-placeholder, div.wpforms-container-full input[type=range]::-webkit-input-placeholder, div.wpforms-container-full input[type=search]::-webkit-input-placeholder, div.wpforms-container-full input[type=tel]::-webkit-input-placeholder, div.wpforms-container-full input[type=text]::-webkit-input-placeholder, div.wpforms-container-full input[type=time]::-webkit-input-placeholder, div.wpforms-container-full input[type=url]::-webkit-input-placeholder, div.wpforms-container-full input[type=week]::-webkit-input-placeholder, div.wpforms-container-full select::-webkit-input-placeholder, div.wpforms-container-full textarea::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=date]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=datetime]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=datetime-local]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=email]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=month]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=number]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=password]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=range]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=search]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=tel]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=text]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=time]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=url]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full input[type=week]::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full select::-webkit-input-placeholder, .wp-core-ui div.wpforms-container-full textarea::-webkit-input-placeholder {
+    color: #3C3B39!important;
+    opacity: 1!important;
+}
+
+.citadel-contact-form div.wpforms-container-full .wpforms-confirmation-container-full, .citadel-contact-form div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: #C38F3E!important;
+    border: 1px solid #C38F3E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 8px auto;
+}
+.citadel-contact-form div.wpforms-container-full .wpforms-confirmation-container-full p:last-child, .citadel-contact-form div[submit-success]>.wpforms-confirmation-container-full p:last-child {
+    margin: 0;
+    color: white!important;
+}
+.citadel-contact-form div.wpforms-container-full {
+    margin: 0 auto!important;
+    padding: 32px!important;
+    border-radius: 8px!important;
+    border: 1px solid rgba(225, 228, 237, 0.77);
+    background-color: var(--Neutral-colors-100, #FFF)!important;
+    box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08)!important;
+}
+.citadel-contact-form div.wpforms-container-full .wpforms-field-container {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+	gap: 4%;
+}
+.citadel-contact-form .wpforms-container .wpforms-field {
+    width: 48%;
+}
+.citadel-contact-form .wpforms-field-textarea {
+	width: 100%!important;
+}
+.citadel-contact-form div.wpforms-container-full .wpforms-field-label {
+	color: #151411;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px; 
+}
+.citadel-contact-form .wpforms-container .wpforms-field-description, .citadel-contact-form .wpforms-container .wpforms-field-limit-text {
+    margin: 4px 0 0 0;
+    text-align: right;
+}
+.citadel-contact-form .wpforms-container input[type=text], .citadel-contact-form .wpforms-container input[type=email], 
+.citadel-contact-form .wpforms-container input[type=number], .citadel-contact-form div.wpforms-container-full textarea {
+	color: #C38F3E!important;
+	border-radius: 6px;
+	border: 1px solid var(--Neutral-colors-300, #F1F3F7);
+	background: var(--Neutral-colors-100, #FFF);
+	box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.05);
+	padding: 24px 16px;
+}
+.citadel-contact-form div.wpforms-container-full button[type=submit] {
+	color: #FFF;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px; 
+	border-radius: 6px;
+	background: #518581;
+	box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+/* 	padding: 14px 18px; */
+}
+.citadel-contact-form div.wpforms-container-full .wpforms-form textarea:focus {
+    color: #000;
+}
+/* Newsletter */
+.citadel-call-to-action div.wpforms-container-full {
+    text-align: center;
+}
+.citadel-call-to-action div.wpforms-container-full * {
+    text-align: center;
+    padding-bottom: 0;
+}
+.citadel-call-to-action div.wpforms-container-full input[type=email] {
+	width: 453px;
+	padding: 8px 8px 8px 18px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 8px;
+	border: 1px solid var(--Neutral-colors-300, #F1F3F7);
+	background: var(--Neutral-colors-100, #FFF);
+	box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+	
+	color: #518581;
+
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0 auto;
+	height: 50px;
+}
+.citadel-call-to-action div.wpforms-container-full input::placeholder {
+	color: #C38F3E!important;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 142.857% */
+}
+.citadel-call-to-action div.wpforms-container-full button[type=submit] {
+	color: var(--Neutral-colors-100, #FFF);
+	text-align: center;
+
+	font-family: Inter;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 18px; 
+	
+	border-radius: 4px;
+	background-color: #C38F3E!important;
+
+	box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+.citadel-call-to-action .wpforms-container .wpforms-field {
+	padding: 0;
+}
+.citadel-contact-form .schedule a, .citadel-contact-form .question a {
+	color: var( --e-global-color-primary )!important;
+}
+
+
+@media (max-width: 768px){
+	.citadel-contact-form .wpforms-container input[type=text], .citadel-contact-form .wpforms-container input[type=email], 
+	.citadel-contact-form .wpforms-container input[type=number], .citadel-contact-form div.wpforms-container-full textarea {
+	padding: 20px 16px;
+}
+	.citadel-contact-form .wpforms-container .wpforms-field {
+    width: 100%;
+}
+	.citadel-contact-form div.wpforms-container-full button[type=submit] {
+    width: 100%;
+}
+	.citadel-contact-form div.wpforms-container-full .wpforms-field-label {
+    margin-bottom: 8px;
+}
+	.citadel-contact-form div.wpforms-container-full {
+    padding: 24px 24px 32px;
+}
+}</style>
+<!-- end Simple Custom CSS and JS -->

@@ -1,0 +1,88 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Banner  */
+.citadel-main-banner .swiper-pagination-bullet {
+    height: 5px!important;
+    width: 43px!important;
+    border-radius: 5px;
+}
+.citadel-main-banner .swiper-slide-contents {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.48);
+    max-width: 800px!important;
+    margin-left: -17rem;
+	margin-top: 1.5rem;
+}
+
+/* Hero / Cards  */
+.citadel-hero-1 .elementor-image-box-img, .citadel-hero-2 .elementor-image-box-img{
+	overflow: hidden;
+}
+.citadel-hero-1 .elementor-image-box-img img:hover, .citadel-hero-2 .elementor-image-box-img:hover{
+	transform: scale(1.2);
+	transition-duration: 0.7s!important;
+/* 	border-radius: 0.5rem; */
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.30);
+}
+
+/* Testimonials */
+.citadel-testimonials .swiper-slide {
+	border-radius: 0.5rem;
+	border: 1px solid var(--Neutral-colors-400, #E1E4ED);
+	background: var(--Neutral-colors-100, #FFF);
+	box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+.citadel-testimonials .e-eicon-chevron-left {
+	fill: darkblue;
+}
+
+/* Call To Action */
+.citadel-call-to-action .elementor-motion-effects-container {
+	border-radius: 16px;
+}
+/* Email Signup Success Message */
+
+
+/* Trusted brands/partners */
+/* .citadel-trusted-brands {
+	background-color: linear-gradient(260deg, rgba(81, 88, 84, 0.80) 0%, rgba(238, 253, 247, 0.80) 0.01%, rgba(244, 255, 251, 0.32) 100%)!important;
+} */
+.citadel-customer-testimonials {
+	border-radius: 0.5rem;
+	border: 1px solid var(--Neutral-colors-400, #E1E4ED);
+	background: var(--Neutral-colors-100, #FFF);
+	box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+/* For mobiles (width under 767px) */
+@media only screen and (max-width: 767px) {
+  /* Your mobile styles here */
+	/* Banner  */
+	.citadel-main-banner .swiper-pagination-bullet {
+		height: 4px!important;
+		width: 36px!important;
+		border-radius: 4px;
+	}
+	.citadel-main-banner .swiper-slide-contents {
+    padding: 1rem;
+    border-radius: 0.rem;
+    max-width: 100%!important;
+    margin-left: 0rem;
+	margin-top: 0rem;
+	text-align:center;
+}
+}
+
+/* For tablets (width between 1024px and 767px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your tablet styles here */
+	.citadel-main-banner .swiper-slide-contents {
+    max-width: 550px!important;
+    margin-left: 0;
+	text-align: center;
+}
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->

@@ -1,0 +1,54 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.page-header {
+    display: none;
+}
+/* Header Navigation */
+/* .citadel-header .sub-menu { 
+	min-width: 500px!important;
+} */
+
+
+.citadel-header {
+    position: fixed;
+    z-index: 9999!important;
+    margin-top: 0;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+}
+}
+.citadel-header .elementor-nav-menu--main .elementor-item.elementor-item-active {
+    font-weight: 700!important;
+}
+.citadel-navigation .wp-image-22 {
+	margin-top: 1px;
+}
+
+@media (max-width: 1024px){ 
+.elementor-210 .elementor-element.elementor-element-a013e5b .elementor-icon-list-items.elementor-inline-items {
+    display: inline-block;
+}
+.elementor-210 .elementor-element.elementor-element-a013e5b .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+    margin-bottom: 20px;
+}
+.mobile-call-btn svg {
+    fill: #ffffff!important;
+	width: 14px;
+	height: 14px;
+}
+.mobile-call-btn .elementor-button-content-wrapper {
+	display: flex;
+	align-items: center;
+}
+.mobile-nav .elementor-sub-item {
+		font-size: 1em!important;
+	}
+}
+
+@media (max-width: 767px) {
+	.citadel-footer .footer-pages ul{
+	display: grid;
+	gap: 20px;
+	}
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

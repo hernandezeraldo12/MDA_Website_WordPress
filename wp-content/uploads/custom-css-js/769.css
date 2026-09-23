@@ -1,0 +1,23 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* About Us */
+.citadel-join-us-on-the-journey {
+	background: radial-gradient(50% 50% at 50% 50%, rgba(247, 248, 249, 0.00) 0%, #F7F8F9 100%);
+}
+.citadel-remodeling-process .e-con-inner:hover {
+	border-radius: 8px;
+	transform: translateY(-10px);
+	transition: 0.5s;
+}
+.citadel-remodeling-process .e-con-inner > div{
+		box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.20);
+}
+@media (max-width: 768px) {
+	.citadel-remodeling-process .e-con-inner > div{
+		box-shadow: none;
+}
+}
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->

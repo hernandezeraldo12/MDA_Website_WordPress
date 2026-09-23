@@ -1,0 +1,12 @@
+/* Ocultar títulos y descripciones del Lightbox de Elementor */
+.elementor-lightbox .elementor-lightbox-caption {
+    display: none !important;
+}
+
+.elementor-lightbox .elementor-lightbox-title {
+    display: none !important;
+}
+
+.elementor-lightbox .elementor-lightbox-description {
+    display: none !important;
+}
