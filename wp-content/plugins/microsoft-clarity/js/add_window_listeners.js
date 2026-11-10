@@ -32,6 +32,7 @@ const PROJECT_ID_CHANGE_RETRY_BASE_MS = 500;
 const PROJECT_ID_CHANGE_RETRY_MAX_MS = 4000;
 const CONNECTOR_MAXIMUM_SERVICE_COUNT = 200;
 const CONNECTOR_MAXIMUM_SERVICE_ID_BYTES = 512;
+const CONNECTOR_MAXIMUM_DISPLAY_NAME_LENGTH = 80;
 
 const brandAgentUtf8ByteLength = (value) => {
   let bytes = 0;
@@ -68,6 +69,17 @@ const brandAgentValidServiceId = (value) => {
   );
 };
 
+const brandAgentValidDisplayName = (value) => {
+  const bytes = typeof value === "string" ? brandAgentUtf8ByteLength(value) : null;
+  return (
+    bytes !== null &&
+    value.length > 0 &&
+    value.length <= CONNECTOR_MAXIMUM_DISPLAY_NAME_LENGTH &&
+    value.trim() === value &&
+    !/[\x00-\x1F\x7F]/.test(value)
+  );
+};
+
 const brandAgentParseApiKeyConfiguration = (configuration) => {
   if (!configuration || typeof configuration !== "object" || Array.isArray(configuration)) {
     return null;
@@ -79,6 +91,38 @@ const brandAgentParseApiKeyConfiguration = (configuration) => {
       configuration.durationMinutes <= 1440
       ? { mode: "default", durationMinutes: configuration.durationMinutes }
       : null;
+  }
+
+  if (configuration.mode === "display_names") {
+    if (
+      !Array.isArray(configuration.services) ||
+      configuration.services.length === 0 ||
+      configuration.services.length > CONNECTOR_MAXIMUM_SERVICE_COUNT
+    ) {
+      return null;
+    }
+
+    const serviceIds = new Set();
+    const services = [];
+    for (const service of configuration.services) {
+      if (
+        !service ||
+        typeof service !== "object" ||
+        Array.isArray(service) ||
+        !brandAgentValidServiceId(service.serviceId) ||
+        serviceIds.has(service.serviceId) ||
+        !brandAgentValidDisplayName(service.displayName)
+      ) {
+        return null;
+      }
+      serviceIds.add(service.serviceId);
+      services.push({
+        serviceId: service.serviceId,
+        displayName: service.displayName,
+      });
+    }
+
+    return { mode: "display_names", services };
   }
 
   if (
